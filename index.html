@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="btn">
+      <pre> StopWatch <span><i class="fas fa-stopwatch-20"></i></span></pre>
+    </button>
+    <div class="shortcuts">
+      <span>Shortcuts:-</span>
+      <ul>
+        <li>Press 'Enter' to Start the Stopwatch</li>
+        <li>Press 'SpaceTab' to Stop</li>
+        <li>Press 'R' to Resume</li>
+        <li>Press 'L' for Laps</li>
+        <li>Press 'Q' for Reset</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <pre> <span class="minutes">00</span> : <span class="seconds">00</span> : <span class="milliseconds">00</span></pre>
+    </div>
+    <p class="text"></p>
+    <div class="lapDiv">
+      <table class="lapTable">
+        <tr>
+          <td class="head">Sr.no.</td>
+          <td class="head">Lap Time</td>
+        </tr>
+      </table>
+    </div>
+    <div class="buttonsDiv">
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+      <button class="resume">Resume</button>
+      <button class="lap">Lap</button>
+      <button class="reset">Reset</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
